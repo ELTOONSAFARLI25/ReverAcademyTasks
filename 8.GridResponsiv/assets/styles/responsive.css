@@ -1,0 +1,51 @@
+@media only screen and (max-width: 320px) {
+    .header .navbar .navdetails{
+        display: none;
+    }
+    .header .menu{
+        display: flex;
+    }
+    .header{
+        height: 200px;
+    }
+    .header .navbar{
+        width: 90%;
+        height: 200px;
+        font-size: xx-large;
+    }
+    .header .navbar .menu{
+        width: 200px;
+        height: 90px;
+    }
+    .header .navbar .menu p,i{
+        font-size: 40px;
+    }
+    .headbox .image img{
+        width: 400px;
+        height: 400px;
+        
+    
+    }
+
+
+
+
+    main .portfolio .boxes{
+        /* grid-template-columns: repeat(1,400px); */
+        flex-direction: column;
+        flex-wrap: wrap;
+        grid-column-gap: -10px;
+    }
+    main .portfolio .boxes .box{
+        width: 600px;
+    }
+
+}
+@media only screen and (max-width: 768px){
+    .header .navbar .navdetails{
+        display: none;
+    }
+    .header .navbar .menu{
+        display: flex;
+    }
+}

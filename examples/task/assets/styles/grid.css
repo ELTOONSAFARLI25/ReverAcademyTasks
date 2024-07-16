@@ -1,0 +1,35 @@
+.header{
+    grid-area: header;
+}
+.navbar{
+    grid-area: navbar;
+}
+.ads{
+    grid-area: ads;
+}
+.footer{
+    grid-area: footer;
+}
+.article{
+    grid-area: article;
+}
+.container{
+    
+    display: grid;
+    grid-template-areas: 
+    'header header header header header header'
+    'navbar article article article article ads'
+    'navbar footer footer footer footer footer';
+    background-color: gray;
+    padding: 5px;
+    grid-gap: 10px;
+}
+.container > div {
+    background-color: gold;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+
+}
+
+

@@ -1,0 +1,9 @@
+@use "../abstracts/variables" as *;
+header{
+    background-color:$headercolor;
+    width: 1700px;
+    .header{
+       width: 100%;
+       height: 80px;
+    }
+}

@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0E1D34;
+}
+p,span,a,h1,h2,h3,h4,h5,h6{
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    text-decoration: none;
+}
+nav{
+    position: sticky;
+}
+.navbar{
+    margin: 0 100px;
+    height: 80px;
+}
+nav .links ul{
+    display: flex;
+    list-style: none;
+    align-items: baseline;
+
+
+}
+nav .links ul li{
+    margin: 0 10px;
+    font-size: 18px;
+    transition-duration: 0.3s;
+   transition-property: all;
+}
+nav .links ul a:hover{
+    color: lightblue;   
+}
+nav .links ul .button{
+   background-color: #0D42FF;
+   padding: 5px 5px;
+   border-radius: 10px;
+}
+nav .links ul li:hover{
+    transform: scale(1.1);
+    color: black;
+}
+.header{
+    margin: 0px 100px;
+}
+.header .text p{
+    width: 600px;
+    margin-top: 30px;
+}
+.header .text h1 {
+    width: 500px;
+    margin-top: 30px;
+}
+.header .text .input{
+    background-color: white;
+    width: 600px;
+    height: 70px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+.header .text .input button{
+    background-color: #0D42FF;
+    border: none;
+    width: 100px;
+    margin: 10px;
+    border-radius: 10px;
+
+}
+.header .text .input input{
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+}

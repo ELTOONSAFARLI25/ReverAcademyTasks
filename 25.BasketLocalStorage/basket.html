@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./basket.css" />
+    <script src="./basket.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="./index.html" class="title-text">mrendyol</a></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./wishlist.html">Wishlist</a></li>
+        <li><a href="./basket.html">Basket</a></li>
+        <li><a href="">Log in</a></li>
+        <li>
+          <select class=".category">
+            <option value="category">Category</option>
+            <option value="men's clothing">Men's clothing</option>
+            <option value="jewelery">Jewelery</option>
+            <option value="electronics">Electronics</option>
+            <option value="women's clothing">Women's clothing</option>
+          </select>
+        </li>
+      </ul>
+    </nav>
+    <hr />
+    <div class="cards-basket">
+      <div class="headers">
+        <h3>Shopping Cart</h3>
+        <p class="removeAll">Remove All</p>
+      </div>
+      <!-- <div class="box-basket">
+        <img
+          src="https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg"
+          alt=""
+        />
+        <div class="texts">
+          <h1>title:</h1>
+          <p>category:</p>
+        </div>
+        <div class="counter">
+          <p class="minus">-</p>
+          <input type="number" value="0" class="count" readonly />
+          <p class="pilus">+</p>
+        </div>
+        <div class="price">
+          <h1>price:</h1>
+          <p class="remove">remove</p>
+        </div>
+      </div> -->
+      <div class="total">
+        <h1 class="totalPrice">Total price:</h1>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

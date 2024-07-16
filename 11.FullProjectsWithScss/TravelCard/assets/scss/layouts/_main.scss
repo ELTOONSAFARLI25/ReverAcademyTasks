@@ -1,0 +1,60 @@
+@use "./../abstracts/variables" as *;
+@use "./../abstracts/mixin" as *;
+@use "./../abstracts/extends" as *;
+ 
+.title{
+    @include textalign;
+    margin-top: 100px;
+    h1{
+        font-family: $font;
+    }
+    p{
+        
+        font-family: $font;
+        width: 800px;
+        margin: auto;
+        color: gray;
+        margin-top: 20px;
+    }
+    
+}
+.box{
+    @include box;
+    border: none;
+    box-shadow: 1px 1px 3px;
+    margin-left: 100px; 
+    margin-top: 30px;
+    overflow: hidden;
+    img{
+        @include box($height:250px, $borderradius:0px)
+        // object-fit: contain;
+    }
+    .btnbox{
+        width: 90px;
+        height: 30px;
+        background-color: orange;
+    }
+    .detail1{
+        h2{
+            font-family: $font;
+            margin:15px;
+        }
+        p{
+            font-family: $font;
+            margin: 15px;  
+            color:gray;
+        }
+        hr{
+            width: 80%;
+            @include margin;
+        }
+    }
+    .detail2{
+        display: flex;
+        h2{
+            font-family: $font;
+            color: orange;
+        }
+    }
+    
+}

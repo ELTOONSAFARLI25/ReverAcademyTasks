@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    font-family:monospace;
+    font-size: 18px;
+}
+body{
+    background-color: #374151;
+    margin: auto;
+}
+.to-do-tasks p{
+    color: white;
+    margin-left: 20px;
+}
+form p{
+    color: red; 
+}
+h1{
+    color: gray;
+}
+
+header ,main{
+    margin: 30px 50px auto;
+    
+}
+form #to-do-input{
+    width: 500px;
+    border: none;
+    border-radius: 12px;
+    padding: 8px;
+    background-color: #1F2938;
+    color: white;
+    
+}
+form #to-do-submit{
+    background-color: transparent;
+    border: none;
+    color: rgb(150, 85, 210);
+    font-weight: 700;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+form #to-do-submit:hover{
+    opacity: 0.8;
+}
+form #to-do-submit:active{
+    opacity: 0.5;
+}
+.to-do-tasks .task{
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+}
+.to-do-tasks .task {
+    border-radius: 10px;
+    background-color: #0E1826;
+    margin-top: 15px;
+}
+.to-do-tasks .task .content input{ 
+    width: 270px;
+    border: none;
+    padding: 8px;
+    background-color: transparent;
+    color: gray;
+}
+.to-do-tasks button{
+    background-color: transparent;
+    border: none;
+    color: yellowgreen;
+    font-weight: 700;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    margin-top: 18px;
+    margin-right: 10px;
+}
+.to-do-tasks button:hover{
+    opacity: 0.8;
+}
+.to-do-tasks button:active{
+    opacity: 0.5;
+}
+#task-delete-all{
+    margin-top: 30px;
+}

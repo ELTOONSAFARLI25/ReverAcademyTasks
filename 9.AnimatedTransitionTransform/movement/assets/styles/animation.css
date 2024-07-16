@@ -1,0 +1,35 @@
+.container i{
+    animation-name: beat;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes beat {
+    20%{
+        transform: scale(0.5);
+    }
+    40%{
+        transform: scale(1.2);
+    }
+
+}
+.container .box{
+    animation-name: direction;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes direction {
+    20%{
+        top: 0;
+        left: 500px;
+        
+    }
+    40%{
+        top: 400px;
+        left: 500px;
+        background-color: darkblue;
+    }
+    60%{
+        top: 400px;
+        left: 0;
+    }
+}

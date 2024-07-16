@@ -1,0 +1,129 @@
+    *{
+        box-sizing: border-box;
+        padding: 0;
+    }
+    body{
+        background-color: #292a28;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .calculator{
+        width: 400px;
+        height: 670px;
+        background-color: black;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      
+    
+    }
+     .display #calc-input{
+        background-color: transparent;
+        font-size: 40px;
+        color: white;
+        font-family:sans-serif;
+        /* opacity: 0.1; */
+        border: none;
+        display: block ;
+        height: 90px;
+        width: 90%;
+        margin: 0 5px;
+        margin: auto;
+        margin-top: 15px;
+        border-radius: 10px;
+        text-align: right;
+        caret-color: #427E04;
+        
+        
+    }
+    .display #calc-input:focus{
+        outline: none;
+        
+    }
+    .display #calc-result{
+        background-color: #090909;
+        border: none;
+        width: 85%;
+        height: 50px;
+        margin-left: 30px;
+        margin-top: 10px;
+        color: white;
+        font-size: 25px;
+        font-family:sans-serif;
+        text-align: right;
+    }
+    .display #calc-result:focus{
+        outline: none;
+    }
+    .icons{
+        display: flex;
+        justify-content: space-between;
+        width: 85%;
+        margin: 20px 30px;
+        justify-content: space-between;
+    }
+    .icons .icon{
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .icons i{
+        color: white;
+        cursor: pointer;
+        transition-duration: 0.3s;
+    }
+    .icons i:hover{
+        opacity: 0.8;
+    }
+    .icons i:active{
+        opacity: 0.6;
+    }
+    .icons .button button{
+        background-color: transparent;
+        border: none;
+        
+    }
+    .icons .button button i{
+        color: green;
+        font-size: 20px;
+        transition-duration: 0.3s;
+    }
+    .icons .button button i:hover{
+        opacity: 0.8;
+    }
+    .icons .button button:active{
+        opacity: 0.6;
+    }
+    .buttons{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        width: 90%;
+        margin: auto;
+        
+    }
+    .calc-button , .calc-resultBtn{
+        height: 80px;
+        font-size: 30px;
+        border-radius: 50%;
+        color: white;
+        margin: 3px 5px;
+        background-color: #171815;
+        opacity: 0,2;
+        border: none;
+        cursor: pointer;
+        transition-duration: 0.3s;
+    }
+    .calc-button:hover{
+        opacity: 0.8;
+    }
+    .calc-button:active{
+        opacity: 0,6;
+        transform: scale(0.9);
+    }
+    .operator{
+        color: #427E04;
+    }
+  
+    
+
+

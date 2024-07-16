@@ -1,0 +1,74 @@
+body{
+    background-color: rgba(0, 255, 174, 0.413);
+}
+.div1 , .div2 ,.div3{
+
+    width: 400px;
+    height: 500px;
+    border: 1px solid lightgray;
+    /* divleri yanbayan duzmeye imkan yaradir */
+    display: inline-block;
+    border-radius: 5%;
+    box-shadow: 2px 2px white;
+    background-color: white;
+    
+    
+}
+
+.div1,.div2{
+    margin-right: 50px;
+}
+.div1 .img1{
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 5%;
+}
+/* sekili olcuye uygun yerlesdirir */
+.div1 .image1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+
+}
+/* kenarlarda bosluq yaradir */
+h3,p{
+    margin: 10px;
+}
+/* bashligin fontunu deyisir */
+/* h3+p yalniz basligdan sonra geken p teginin fontunu deyisir */
+h3,h3+p{
+    font-family:Arial, Helvetica, sans-serif;
+}
+/* sozler ve setirler arasinda bosluqlar yaradir */
+p{
+    color:rgba(72, 72, 72, 0.712);
+    word-spacing: 5px;
+    line-height: 20px ;
+}
+/* p teginden sonra gelen p tegine aiddir */
+p + p{
+    margin-top: 30px;
+    color: rgba(72, 72, 72, 0.511);
+}
+.div2 {
+    background-image: url(https://c02.purpledshub.com/uploads/sites/48/2020/01/06_BrianCummins_AndromedaGalaxy-a8d75a0-e1616074453615.jpg?webp=1&w=1200);
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.div2 h3{
+    margin-top:290px;
+}
+.div3{
+    background-image: url(https://cdn.britannica.com/57/151657-131-A74A72C8/Camel-caravan-desert-sand-dunes-Sahara-North.jpg?w=840&h=460&c=crop);
+    
+
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.div3 h3{
+    margin-top: 260px;
+}

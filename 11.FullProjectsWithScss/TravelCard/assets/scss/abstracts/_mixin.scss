@@ -1,0 +1,22 @@
+@mixin display{
+    display: flex;
+}
+@mixin flexJustifyContent($justify: space-between){
+    justify-content: $justify;
+
+}
+@mixin flexAlignContent($align: center){
+    align-items: $align;
+}
+@mixin marginAuto($margin:auto){
+    margin: $margin;
+}
+@mixin textalign($textalign: center){
+    text-align: $textalign;
+}
+@mixin box($width:400px , $height: 700px , $borderradius:12px){
+    width: $width;
+    height: $height;
+    border-radius: $borderradius;
+
+}

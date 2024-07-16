@@ -1,0 +1,22 @@
+.container1 .box1{
+    transition-duration: 1s;
+    transition-property: all;
+}
+.container1 .box1:hover{
+    width: 300px;
+}
+.container2 .box1{
+    transition-duration: 1s;
+    transition-property: all;
+}
+.container2 .box2{
+    transition-duration: 1s;
+    transition-delay: 1s;
+    transition-property: all;
+}
+.container2 .box1:hover{
+    width: 300px;
+}
+.container2 .box1:hover + .box2{
+    width: 300px;
+}

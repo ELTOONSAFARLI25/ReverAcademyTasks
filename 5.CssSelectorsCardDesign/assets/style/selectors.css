@@ -1,0 +1,77 @@
+.img img{
+    width: 400px;
+    height: 400px;
+    box-shadow: 1px 1px 3px;
+
+}
+.main{
+    width: 600px;
+    height: 800px;
+    border: 1px solid gray;
+    border-radius: 5%;
+    box-shadow: 1px 1px 10px 10px gray;
+}
+.main > .title ,  h4 ,ol{
+    font-family: "Roboto Slab", serif;;
+}
+.main > .title{
+    text-align: center;
+    color: green;
+}
+
+.titlee {
+    display:flex;
+    justify-content: space-between;
+}
+.title1,.body{
+    margin-left: 70px;
+}
+.title2,.body{
+    margin-right: 70px;
+}
+/* PROBLEM??? */
+.list{
+    margin:0;
+    padding: 0;
+    list-style-type:decimal;
+}
+.note1{
+    color: green;
+}
+.note2,.note4{
+    color: red;
+    font-style: italic;
+    
+}
+.note3,.title2,.note5{
+    color: darkblue;
+}
+.note4{
+    font-weight: 400;
+}
+/* qisa yol?? */
+.list1,.list2,.list3,.list4{
+    margin: 10px;
+    font-weight: 800;
+}
+.list2,.list3{
+    color: purple;
+}
+.list4{
+    list-style: none;
+    margin-left: 0;
+    font-style: italic;
+    font-weight: 400;
+    /* en sola yapisiq */
+    color: red;
+}
+.list4{
+    margin-left: -15px;
+}
+
+
+
+
+
+
+

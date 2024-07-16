@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./app.js" defer></script>
+    <title>To-Do LIST | By ELTON</title>
+</head>
+<body>
+
+    <header>
+        <h1>To-Do LIST</h1>
+        <form id="task-form">
+            <input type="text" id="to-do-input" placeholder="What do you have planned?">
+            <input type="submit" id="to-do-submit" value="Add Task">
+            <p id="alert" style="display: none;">You should enter task!</p>
+        </form>
+    </header>
+    <main>
+        <div class="to-do-tasks">
+            <h1>Tasks</h1>
+            <!-- <div class="task">
+                    <input type="text" id="to-do-task" value="My Task" readonly>
+                    <button id="task-edit">Edit</button>
+                    <button id="task-delete">Delete</button>
+            </div> -->
+            
+            <button id="task-delete-all">Delete All</button>
+        </div>
+        
+    </main>
+</body>
+</html>

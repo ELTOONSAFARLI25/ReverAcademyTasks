@@ -1,0 +1,89 @@
+body{
+    background-color: rgb(12, 67, 43);
+    height: 10000px;
+}
+.container{
+    
+    width: 1200px;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 8em;    
+}
+.title{
+    text-align: center;
+    font-family: "Young Serif", serif;
+    color: white;
+    margin: 0px 50px;
+}
+.box{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 10px;
+    margin-top: 50px;
+    box-shadow: 1px 1px 5cap ;
+}
+.div1{
+    position: relative;
+    background-color: darkorange; 
+}
+.div2{
+    background-color: lightsalmon;
+}
+.div3{
+    background-color: green;}
+.div4{
+    background-color: lightblue;
+}
+#icon{
+    position: absolute;
+    top: 40px;
+    
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+.text{
+    font-family: "Young Serif", serif;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 100px;
+}
+.detail{
+    font-size: 15px;
+    margin: 10px;
+    
+}
+button{
+    font-family: "Young Serif", serif;
+    width: 90px;
+    height: 40px; 
+    position: relative;
+    bottom: 80px;
+    border: none;
+}
+button a{
+    text-decoration: none;
+
+}
+.heading{
+    width: 60px;
+    height: 100px;
+    /* background-color: white; */
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: 80px;
+    
+    
+}
+.heading a{
+    color: rgb(17, 46, 0);
+    box-shadow: 1px 1px 3px 2px;
+}
+
+

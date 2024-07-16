@@ -1,0 +1,5 @@
+@use "../abstrats/variables" as *;
+header{
+    width: 100%;
+    background-color: $backcolor;
+}

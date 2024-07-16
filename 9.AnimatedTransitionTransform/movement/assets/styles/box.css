@@ -1,0 +1,28 @@
+h1{
+    text-align: center;
+}
+.container{
+    width: 600px;
+    height: 500px;
+    border: 2px solid black;
+    margin: auto;
+    position: relative;
+}
+.fa-heart{
+    font-size: 100px;
+    display: flex;
+    margin-top: 200px;
+    justify-content: center;
+}
+.container .box{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 255, 0.806);
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+.container .box:hover{
+    animation-play-state: paused;
+}

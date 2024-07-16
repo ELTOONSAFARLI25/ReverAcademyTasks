@@ -1,0 +1,76 @@
+@use "../abstracts/mixin" as *;
+@media only screen and (max-width:990px) {
+    .navbar-css .list-details{
+        display: none;
+        
+    }
+    .navbar-css a .image{
+        position: absolute;
+        left: 700px;
+        top: 100px;
+        width: 100px;
+        height: 100px;
+        
+        
+    }
+    .navbar-css .list-buttons .dark-light-mode , .eng , .rus{
+        display: none;
+
+    }
+    .navbar-css .list-buttons .ferdi {
+        position: absolute;
+        left: 100px;
+        top: 5px;
+        
+        box-shadow: none;
+        border-radius: 0px;
+        transition-duration: 0.3s;
+        transition-property: all;
+        font-size: 22px;
+
+    }
+    .navbar-css .list-buttons .ferdi:hover{
+        border: 0px;
+        transform: none;
+        border-top: 3px solid $maincolor;
+    }
+    .navbar-css .list-buttons .biznes{
+        position: absolute;
+        left: 200px;
+        top: 5px;
+        box-shadow: none;
+        border-radius: 0px;
+        transition-duration: 0.3s;
+        transition-property: all;
+        font-size: 22px;
+    }
+    .navbar-css .list-buttons .biznes:hover{
+        border: 0px;
+        transform: none;
+        border-top: 3px solid $maincolor;
+    }
+    main .navs-row{
+        width: 80%;
+    }
+    main .navs-row .list-details {
+        display: none;
+    }
+     main .navs-row .button{
+        position: absolute;
+        right: -100px;
+     }
+     footer .footer-rows{
+        display: none;
+     }
+
+
+    
+}
+
+@media only screen and (max-width:1300px) {
+    .navbar-css{
+        width: 80%;
+        
+    }
+    
+}

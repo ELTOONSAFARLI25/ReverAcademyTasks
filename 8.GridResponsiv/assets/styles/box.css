@@ -1,0 +1,339 @@
+body{
+    margin: 0;
+}
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+}
+.header{
+    grid-area: header;
+    width: 100%;
+    height: 100px;
+    background-color: #2C3E50;
+    position: fixed;
+}
+p,h1,a,h2,span,i{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    
+}
+.navbar{
+    grid-area: navbar;
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    align-items: center;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar .navdetails{
+    display: flex;
+    list-style: none;
+
+}
+.navbar .navdetails li{
+    padding: 0px 12px;
+}
+.navbar .navdetails a{
+    text-decoration: none;
+}
+
+.navbar .navdetails li:hover a{
+    color: aqua;
+}
+.navbar .menu{
+    width: 90px;
+    height: 40px;
+    background-color:#1ABC9C;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    padding: 9px 11px;
+    display: none;
+    
+}
+main .headbox{
+    width: 100%;
+    height: 790px;
+    background-color: #1ABC9C;
+    display: grid;
+    text-align: center;
+    grid-area: headbox;
+}
+main .headbox .image{
+    overflow: hidden;
+}
+main .headbox .image img{
+    width: 280px;
+    height: 280px;
+    object-fit: contain;
+    padding-top: 190px;
+    
+}
+main .title1 h1{
+    font-size: 60px;
+
+}
+main .headbox .title1 .icon{
+    display: flex;
+    justify-content: center;
+
+}
+main .line1 , .line2{
+    width: 100px;
+    border: 2px solid white;
+    margin:0 40px;
+}
+main .title1 i{
+    font-size: 35px;
+    color: white;
+    margin: -20px;
+}
+main .title1 h2{
+    font-weight: 400;
+    /* padding: 0; */
+    margin: 30px;
+}
+main .portfolio{
+    
+    width: 100%;
+    height: 800px;
+    display: grid;
+    text-align: center;
+    grid-area: portfolio;
+}
+main .portfolio .title2 h1{
+    color: #2C3E50;
+    font-size: 47px;
+    margin-top: 100px;
+}
+.portfolio .title2 i{
+    font-size: 35px ;
+    color: #2C3E50;
+    margin-bottom: 50px;
+}
+main .portfolio .boxes{
+    width: 1200px;
+    display: grid;
+    grid-template-areas: 
+    'box1 box2 box3'
+    'box4 box5 box6';
+    grid-row-gap: 40px;
+    margin: 0 auto;
+    
+}
+main .portfolio .boxes .box{
+    width: 400px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 12px;
+    margin: 0 auto ;
+   
+}
+.box1{
+    grid-area: box1;
+}
+.box2{
+    grid-area: box2;
+}
+.box3{
+    grid-area: box3;
+}
+.box4{
+    grid-area: box4;
+}
+.box5{
+    grid-area: box5;
+}
+.box6{
+    grid-area: box6;
+}
+
+main .portfolio .boxes .box img{
+    width: 400px;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 12px;
+    
+}
+main .about{
+    width: 100%;
+    height: 500px;
+    background-color: #1ABC9C;
+    display: grid;
+    text-align: center;
+    margin-top: 100px;
+    flex-direction: column;
+    
+}
+main .about .title3 h1{
+    font-size: 47px;
+    margin: 0;
+}
+main .about .title3 .icon3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+main .about .title3 .icon3 .line3 , .line4{
+    width: 100px;
+    height: 0;
+    border: 2px solid white;
+    margin: 30px;
+}
+main .about .title3 .icon3 i{
+    font-size: 30px;
+    color: white;
+}
+main .about .aboutdetails{
+    width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+main .about .aboutdetails p{
+    font-size: larger;
+    text-align: start;
+}
+main .about .aboutdetails .aboutdetail1 , .aboutdetail2{
+    width: 45%;
+}
+
+main .about button{
+    display: flex;
+    align-items: center;
+    margin: 50px auto;
+    width: 210px;
+    height: 70px;
+    border: 2px solid white;
+    background: none;
+    cursor: pointer;
+    border-radius: 12px;
+    
+
+}
+main .about button:hover{
+    background-color: white;
+}
+main .about button:hover p {
+    color: black;
+}
+main .about button:hover i{
+    color: black;
+}
+main .about button i , p{
+    color: white;
+    margin: 8px;
+    font-size: 18px;
+}
+main .contact{
+    width: 100%;
+    height: 800px;
+    background-color: white;
+}
+main .contact h1{
+    color: #2C3E50;
+    font-size: 47px;
+    text-align: center;
+    margin-top: 100px;
+}
+main .contact .icon4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .contact .icon4 .line5 , .line6{
+    width: 100px;
+    height: 0;
+    border: 2px solid black;
+}
+main .contact .icon4 i{
+    color: #2C3E50;
+    font-size: 30px;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.form{
+    text-align: center;
+
+}
+.form form{
+    margin: 30px;
+   
+}
+.form form input , textarea{
+    margin: 30px;
+    width: 800px;
+    height: 45px;
+    background: transparent;
+    border: none;
+    font-size: 25px;
+}
+.form form textarea{
+    height: 50px;
+}
+.form form #button{
+    width: 90px;
+    height: 50px;
+    background-color: #1ABC9C;
+    color: white;
+    font-size: 20px;
+    border: none;
+
+}
+footer{
+    display: grid;
+    width: 100%;
+    background-color: #2C3E50;
+}
+footer .footer{
+    display: grid;
+    width: 1200px;
+    height: 280px;
+    background-color: #2C3E50; 
+    display: flex;
+    align-items: center ;
+    margin: auto;
+    justify-content: space-between;
+}
+.footer .footerdetail1{
+    text-align: center;
+}
+.footer .footerdetail2 ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around   ;
+    font-size: 35px;
+}
+.footer .footerdetail3{
+    text-align: center;
+}
+.footer .footerdetail3 a{
+    color: #1ABC9C;
+}
+.footer .footerdetail3 a:hover {
+    color:#148971;
+}
+.end{
+    width: 100%;
+    height: 50px;
+    background-color: #18222c;
+    text-align: center;
+    
+}
+.end p{
+    font-size: small;
+    margin-top: 10px;
+}
+
+
+
+

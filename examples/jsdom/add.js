@@ -1,0 +1,18 @@
+const container=document.createElement("div");
+container.style.width="300px";
+const box=document.createElement("div");
+box.innerHTML="290x180px";
+box.style.color="white";
+box.style.textAlign="center";
+box.style.backgroundColor="black";
+box.style.width="300px";
+box.style.height="180px";
+const textHead=document.createElement("i");
+textHead.innerHTML="FULLSTACK";
+textHead.style.textDecoration="italic";
+const text=document.createElement("p");
+text.innerHTML="ReverAcademy";
+const link=document.createElement("p");
+link.innerHTML="Read More>";
+container.append(box,textHead,text,link);
+document.body.appendChild(container);

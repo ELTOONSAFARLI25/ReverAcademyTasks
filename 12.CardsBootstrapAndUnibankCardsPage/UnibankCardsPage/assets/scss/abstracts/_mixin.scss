@@ -1,0 +1,9 @@
+@mixin font($color: black , $weight: 400 , $size: 20px ){
+    color: $color;
+    font-weight: $weight;
+    font-size: $size;
+}
+@mixin link($color: black , $decoration : none ){
+    color: $color;
+    text-decoration: $decoration;
+}

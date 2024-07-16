@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
+    <title>FETCH Requests | By ELTON</title>
+  </head>
+  <body>
+    <button class="getDataBtn">Get Data</button>
+    <button class="addDataBtn">Add Data</button>
+    <table class="inputTable">
+      <tbody>
+        <tr>
+          <td><label for="">Company Name</label></td>
+          <td>
+            <input
+              type="text"
+              class="companyName-input"
+              placeholder="AzerSun"
+            />
+          </td>
+          <td><label for="">Contact Name</label></td>
+          <td>
+            <input
+              type="text"
+              class="contactName-input"
+              placeholder="Abdolbari Goozal"
+            />
+          </td>
+          <td><label for="">Title</label></td>
+          <td>
+            <input
+              type="text"
+              class="companyTitle-input"
+              placeholder="Food production"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="">City</label></td>
+          <td><input type="text" class="city-input" placeholder="Baku" /></td>
+          <td><label for="">Country</label></td>
+          <td>
+            <input
+              type="text"
+              class="country-input"
+              placeholder="Azerbaijani"
+            />
+          </td>
+          <td><label for="">Street</label></td>
+          <td>
+            <input
+              type="text"
+              class="street-input"
+              placeholder="Ayna Sultanova str."
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="">Postal Code</label></td>
+          <td>
+            <input type="text" class="postalCode-input" placeholder="1005" />
+          </td>
+          <td><label for="">Phone Number</label></td>
+          <td>
+            <input
+              type="tel"
+              class="phoneNumber-input"
+              placeholder="(994) xx  - xxx - xx -xx"
+            />
+          </td>
+          <td><button class="submitBtn">Submit</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Company name</th>
+          <th>Address</th>
+          <th>Country</th>
+          <th>Info</th>
+          <th>Delete</th>
+          <th>Edit</th>
+        </tr>
+      </thead>
+      <tbody class="tbody">
+        <div class="spinner"></div>
+      </tbody>
+      <div class="editBox animate__animated animate__fadeInLeft">
+        <h3>EDIT</h3>
+        <input type="text" placeholder="Company Name" class="companyNameEdit" />
+        <input type="text" placeholder="Contact Name" class="contactNameEdit" />
+        <input
+          type="text"
+          placeholder="Contact Title"
+          class="contactTitleEdit"
+        />
+        <input type="text" placeholder="City" class="cityEdit" />
+        <input type="text" placeholder="Country" class="countryEdit" />
+        <input type="text" placeholder="Street" class="streetEdit" />
+        <input type="text" placeholder="Postal Code" class="postalCodeEdit" />
+        <input type="text" placeholder="Phone Number" class="phoneNumberEdit" />
+        <button class="editSubmitBtn">Edit</button>
+      </div>
+      <!-- sweetAlert -->
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </table>
+  </body>
+</html>

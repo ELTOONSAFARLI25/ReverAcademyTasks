@@ -1,0 +1,38 @@
+.getDataBtn{
+    border: none;
+    border-radius: 12px;
+    background-color: none;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+button:hover{
+    background-color: #3660B9;
+    color: white;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px;
+    margin-top: 100px;
+}
+
+.card-img-top{
+    cursor: pointer;
+   transition-duration: 0.3s;
+}
+.card-img-top:hover{
+    opacity: 0.9;
+}
+.card{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

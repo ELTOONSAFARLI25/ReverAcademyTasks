@@ -1,0 +1,36 @@
+.div1{
+    width: 350px;
+    height: 350px;
+    border: 0px solid black;
+    border-radius: 4%;
+    margin: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   
+}
+.img{
+    display: block;
+    width: 200px;
+    border-radius: 50%;
+    margin:0 auto;
+    overflow: hidden;
+}
+.p1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 800;
+    text-align: center;
+
+
+    
+}
+.p2 ,.p3, .p4{
+    color: gray;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 100;
+    text-align: center;
+    
+    
+}
+.p3, .p4{
+    margin: 0;
+}
+

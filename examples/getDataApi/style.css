@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.buttons {
+  text-align: center;
+}
+.buttons button {
+  margin: 10px;
+}
+.table {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+  position: relative;
+  /* border: 1px solid black; */
+}
+/* HTML: <div class="loader"></div> */
+.loader {
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 30px;
+  /* display: inline-grid; */
+  overflow: hidden;
+  display: none;
+  position: absolute;
+  top: 150px;
+  left: 650px;
+}
+.loader:before,
+.loader:after {
+  content: "Loading...";
+  grid-area: 1/1;
+  clip-path: inset(0 -200% 50%);
+  text-shadow: -10ch 0 0;
+  animation: l13 2s infinite;
+}
+.loader:after {
+  clip-path: inset(50% -200% 0%);
+  text-shadow: 10ch 0 0;
+  --s: -1;
+  animation-delay: 1s;
+}
+@keyframes l13 {
+  25%,
+  100% {
+    transform: translateX(calc(var(--s, 1) * 100%));
+  }
+}

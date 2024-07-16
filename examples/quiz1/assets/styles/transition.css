@@ -1,0 +1,8 @@
+main .buttons button{
+    transition-duration: 1s;
+    transition-property: all;
+
+}
+main .buttons  button:hover{
+    transform: scale(1.5);
+}

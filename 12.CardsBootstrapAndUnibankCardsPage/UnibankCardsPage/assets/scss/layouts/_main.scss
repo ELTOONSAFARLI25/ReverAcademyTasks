@@ -1,0 +1,116 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixin" as *;
+main{
+    width: 100%;
+    margin-top: 30px;
+}
+.navs-row{   
+    width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    .list-details{
+        width: 900px;
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        a{
+            @include link;
+            @include font($weight:600 , $size:18px);
+        }
+        font-family: $mainfont;
+    }
+    margin-bottom: 30px;
+}
+.cards{
+    width: 1300px;
+    margin: auto;
+    h1{
+        color: $maincolor;
+        font-family: $mainfont;
+        font-weight: 800;
+    }
+    .card1{
+        display: flex;
+        align-items: center;
+        width: 1300px;
+        height: 300px;
+        // border: 1px solid black;
+        border-radius: 20px;
+        background-color: $headercolor;
+        img{
+            width: 370px;
+            padding: 20px;
+            margin-left: 90px;
+            
+        }
+        h1{
+            color: black;
+            font-weight: 800;
+            font-size: 25px;
+        }
+        p{
+            font-family: $mainfont;
+            font-size: 13px;
+            margin-top: 20px;
+        }
+        .card1-details-detail{
+            margin-top: 40px;
+            margin-left: -50px;
+            width: 800px;
+            display: flex;
+            list-style: none;
+            align-items: center;
+            // justify-content: space-between;
+            li{
+                display: flex;
+                margin-left: 20px;
+                font-family: $mainfont;
+                font-weight: 600;
+                
+                i{
+                    font-size: xx-large;
+                    color: $maincolor;
+                    margin-right: 10px;
+
+                }
+            }
+        }
+    }
+    .col-6{
+        
+        .card{
+            width: 500px;
+            background-color: $headercolor;
+            border: none;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            .card-img-top{
+                width: 300px;
+                margin: 50px;
+                border-radius: 15px;
+            }
+            .card-body{
+                width: 500px;
+            }
+            h2{
+                font-family: $mainfont;
+                font-weight: 800;
+                font-size: larger;
+                margin: auto;
+                margin: 0 30px;
+        
+            }
+            p{
+                font-family: $mainfont;
+                font-size: small;
+                margin: 10px 30px;
+            }
+            a{
+                margin: 30px 20px;
+            }
+        }
+    }
+}
+

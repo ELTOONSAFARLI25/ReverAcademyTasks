@@ -1,0 +1,47 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixin" as *;
+.navbar-css{
+    width: 1300px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    img{
+        width: 40px;
+        height: 40px;
+        border-radius: 12px;
+    }
+    .list-details{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        li {
+            padding: 0 10px;
+            a{
+                font-family: $mainfont;
+                @include link;
+                @include font($color: black , $weight: 400 , $size: 13px );
+            }
+        }
+    }
+    .list-buttons{
+        display: flex;
+        list-style: none;
+        li{
+            padding: 0 10px;
+        }
+        a{
+            @include font($color: black , $weight: 600 , $size: 13px );
+            
+            @include link;
+            font-family: $mainfont;
+                
+        }
+        
+        
+
+        
+    }
+    
+}

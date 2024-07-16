@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator | Designed By Elton</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./app.js" defer></script>
+</head>
+<body>
+    <section class="calculator">
+        <div class="display">
+            <span type="text" id="calc-input"></span>
+            <span type="text" id="calc-result" readonly></span>
+        </div>
+        <div class="icons">
+            <div class="icon">
+                <i class="fa-solid fa-clock-rotate-left" id="history"></i>
+                <i class="fa-solid fa-ruler-horizontal" id="converter"></i>
+                <i class="fa-solid fa-square-root-variable" id="scientific-calc"></i>
+            </div>
+            
+            <div class="button">
+                <button><i class="fa-solid fa-delete-left" id="delete"></i></button>
+            </div>
+            
+        </div>
+        <div class="buttons">
+            <button class="calc-button clear" onclick="clear()" style="color: #B85F4D;">C</button>
+            <button class="calc-button operator" >( )</button>
+            <button class="calc-button operator">%</button>
+            <button class="calc-button operator">÷</button>
+            <button class="calc-button">7</button>
+            <button class="calc-button">8</button>
+            <button class="calc-button">9</button>
+            <button class="calc-button operator">×</button>
+            <button class="calc-button">4</button>
+            <button class="calc-button">5</button>
+            <button class="calc-button">6</button>
+            <button class="calc-button operator" >−</button>
+            <button class="calc-button">1</button>
+            <button class="calc-button">2</button>
+            <button class="calc-button">3</button>
+            <button class="calc-button operator">+</button>
+            <button class="calc-button operator">+/−</button>
+            <button class="calc-button">0</button>
+            <button class="calc-button operator">.</button>
+            <button class="calc-resultBtn operator" style="background-color: #427E04; color: black;">=</button>
+        </div>
+
+    </section>
+
+
+
+</body>
+</html>
