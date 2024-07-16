@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: white;
+  transition-duration: 0.3s;
+}
+nav {
+  background-color: gray;
+  height: 80px;
+  display: flex;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 800px;
+  font-size: 20px;
+  margin-left: 200px;
+}
+.title {
+  font-size: 30px;
+}
+.removeAll {
+  margin-left: 150px;
+  margin-top: 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: orange;
+  font-size: 20px;
+}
+.removeAll:hover {
+  opacity: 0.9;
+}
+.removeAll:active {
+  opacity: 0.7;
+}
+.fav-cards {
+  width: 1450px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  width: 250px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+.card:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+img {
+  width: 250px;
+  height: 300px;
+  object-fit: contain;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.card img:hover {
+  transform: scale(1.1);
+}
+.card-body {
+  width: 80%;
+  margin: auto;
+  /* align-items: center; */
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.card-details p {
+  margin: 8px 0;
+}
+.removeCard {
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.3s;
+  text-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.removeCard:hover {
+  transform: rotate(90deg);
+}

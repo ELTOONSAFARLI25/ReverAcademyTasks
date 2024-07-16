@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: white;
+  transition-duration: 0.3s;
+}
+nav {
+  background-color: gray;
+  height: 80px;
+  display: flex;
+  opacity: 0.8;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 800px;
+  font-size: 20px;
+  margin-left: 200px;
+}
+.title {
+  font-size: 30px;
+}
+.card-box {
+  width: 1450px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card {
+  width: 250px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.card-box img {
+  width: 250px;
+  height: 300px;
+  object-fit: contain;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.card-box img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+.card-body {
+  width: 90%;
+  height: 120px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  position: relative;
+}
+.favBtn {
+  transition: 0.3s;
+}
+.product-title {
+  cursor: pointer;
+}
+.price {
+  position: absolute;
+  bottom: 20px;
+}
+.rating {
+  position: absolute;
+  bottom: 0px;
+}
+.icons i {
+  color: red;
+  font-size: 20px;
+  cursor: pointer;
+}
