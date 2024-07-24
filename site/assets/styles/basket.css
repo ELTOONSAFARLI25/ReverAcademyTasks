@@ -1,0 +1,260 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+nav {
+  width: 100%;
+  height: 90px;
+  background-color: #190019;
+  display: flex;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+}
+.fa-bars {
+  font-size: 30px;
+  display: none;
+}
+ul a {
+  text-decoration: none;
+  color: white;
+}
+
+.basket,
+.wishlist,
+.about,
+.contact,
+.login {
+  border: 2px solid #190019;
+  padding: 10px 12px;
+  transition: 0.3s;
+}
+.basket {
+  border-bottom-color: goldenrod;
+}
+.basket:hover,
+.wishlist:hover,
+.about:hover,
+.contact:hover,
+.login:hover {
+  border-top-color: goldenrod;
+  border-bottom-color: goldenrod;
+}
+.title-home {
+  font-size: 30px;
+}
+.search-input {
+  width: 300px;
+  height: 30px;
+  border-radius: 12px;
+  border: none;
+  font-size: 15px;
+}
+footer {
+  width: 100%;
+  height: 150px;
+  background-color: #2b124c;
+  display: flex;
+  position: static;
+  bottom: 0px;
+}
+.footer-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  width: 90%;
+  margin: auto;
+  font-size: 20px;
+  align-items: center;
+}
+
+.contact-list {
+  display: flex;
+  list-style: none;
+}
+.contact-list li {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.products {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.basket-cards {
+  width: 60%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 12px;
+}
+.basket-card {
+  width: 90%;
+  height: 100px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.basket-card-img {
+  width: 60px;
+}
+.basket-card-img img {
+  width: 100%;
+}
+.basket-card-details {
+  text-align: center;
+}
+.basket-card-details p {
+  margin-top: 10px;
+}
+.count {
+  font-size: 20px;
+  margin: 5px;
+}
+.minus,
+.plus {
+  padding: 4px 9px;
+  text-align: center;
+  background-color: lightgray;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.minus:active,
+.plus:active {
+  opacity: 0.6;
+}
+.price {
+  border-left: 1px solid black;
+  height: 90px;
+  /* display: flex; */
+  text-align: center;
+  align-items: center;
+  padding-left: 30px;
+}
+.price h1 {
+  margin-top: 10px;
+}
+.removeBtn {
+  margin: auto;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  text-transform: uppercase;
+}
+.removeBtn:hover {
+  opacity: 0.8;
+}
+.removeBtn:active {
+  opacity: 0.6;
+}
+.total-price {
+  width: 20%;
+  height: 400px;
+  position: fixed;
+  right: 200px;
+  border-radius: 12px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.total-price-amount {
+  margin: 20px;
+}
+.total-price-body {
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+}
+.button-total-price button {
+  height: 50px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.2s;
+  /* background-color: transparent; */
+  border: none;
+}
+.button-total-price button:active {
+  opacity: 0.8;
+}
+.confrimBasketBtn {
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  background-color: goldenrod;
+  color: white;
+  border-bottom-left-radius: 12px;
+}
+.emptyBasketBtn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  background-color: #190019;
+  color: white;
+  border-bottom-right-radius: 12px;
+}
+
+/* responsive */
+@media only screen and (max-width: 1000px) {
+  .basket,
+  .wishlist,
+  .about,
+  .contact,
+  .login {
+    display: none;
+  }
+  .fa-bars {
+    display: block;
+  }
+  .search-input {
+    height: 40px;
+    margin-left: 80px;
+  }
+  .title-home {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .search-input {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .footer-list {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    font-size: 20px;
+  }
+  .contact-list {
+    margin-left: -20px;
+  }
+  .footer-list li {
+    margin-top: 20px;
+  }
+}

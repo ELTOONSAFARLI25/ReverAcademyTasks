@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+nav {
+  width: 100%;
+  height: 90px;
+  background-color: #190019;
+  display: flex;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+}
+.fa-bars {
+  font-size: 30px;
+  display: none;
+}
+ul a {
+  text-decoration: none;
+  color: white;
+}
+
+.basket,
+.wishlist,
+.about,
+.contact,
+.login {
+  border: 2px solid #190019;
+  padding: 10px 12px;
+  transition: 0.3s;
+}
+.wishlist {
+  border-bottom-color: goldenrod;
+}
+.basket:hover,
+.wishlist:hover,
+.about:hover,
+.contact:hover,
+.login:hover {
+  border-top-color: goldenrod;
+  border-bottom-color: goldenrod;
+}
+.title-home {
+  font-size: 30px;
+}
+.search-input {
+  width: 300px;
+  height: 30px;
+  border-radius: 12px;
+  border: none;
+  font-size: 15px;
+}
+footer {
+  width: 100%;
+  height: 150px;
+  background-color: #2b124c;
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+}
+.footer-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  width: 90%;
+  margin: auto;
+  font-size: 20px;
+  align-items: center;
+}
+
+.contact-list {
+  display: flex;
+  list-style: none;
+}
+.contact-list li {
+  margin-left: 20px;
+  font-size: 20px;
+}
+.cards {
+  width: 85%;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.card {
+  width: 260px;
+  height: 400px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  transition: 0.3s;
+  overflow: hidden;
+}
+.card:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.card-img {
+  width: 220px;
+  margin: auto;
+  text-align: center;
+  cursor: pointer;
+}
+.card-img img {
+  width: 100%;
+  object-fit: contain;
+  transition: 0.3s;
+}
+.card-img img:hover {
+  transform: scale(1.1);
+}
+.card-body {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: auto;
+  margin-top: 10px;
+}
+.card-icons i {
+  font-size: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.removeFavCard:hover {
+  transition: 0.3s;
+  transform: rotate(90deg);
+}
+.basketBtn:hover {
+  color: #2b124c;
+}
+.card-icons i:active {
+  opacity: 0.5;
+}
+
+/* responsive */
+@media only screen and (max-width: 1000px) {
+  .basket,
+  .wishlist,
+  .about,
+  .contact,
+  .login {
+    display: none;
+  }
+  .fa-bars {
+    display: block;
+  }
+  .search-input {
+    height: 40px;
+    margin-left: 80px;
+  }
+  .title-home {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .search-input {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .footer-list {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    font-size: 20px;
+  }
+  .contact-list {
+    margin-left: -20px;
+  }
+  .footer-list li {
+    margin-top: 20px;
+  }
+}

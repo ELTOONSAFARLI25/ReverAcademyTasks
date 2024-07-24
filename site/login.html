@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/styles/login.css" />
+    <script src="./assets/scripts/login.js" defer></script>
+    <title>Mrendyol | Shopping site</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="./home.html" class="title-home">mrendyol</a></li>
+        <li class="input-list">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="product, category or brand"
+          />
+        </li>
+        <li><a href="./basket.html" class="basket">Basket</a></li>
+        <li><a href="./wishlist.html" class="wishlist">Wishlist</a></li>
+        <li><a href="./about.html" class="about">About</a></li>
+        <li><a href="./contact.html" class="contact">Contact</a></li>
+        <li><a href="./login.html" class="login">Log in</a></li>
+        <li>
+          <a href=""><i class="fa-solid fa-bars"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="container log-in">
+        <div class="log-in-div">
+          <h1 style="margin: 20px">Log in</h1>
+          <form class="log-in-form">
+            <input
+              type="email"
+              id="log-in-email"
+              placeholder="Email"
+              required
+            />
+            <input
+              type="password"
+              id="log-in-password"
+              placeholder="Password"
+              required
+            />
+            <span class="log-in-alert" style="color: red; display: none"
+              >Invalid email or password!</span
+            >
+            <a href="" style="text-decoration: underline; padding: 10px"
+              >Forgot your Passowrd?</a
+            >
+            <input type="submit" id="submit-log-in" />
+          </form>
+        </div>
+        <div class="toggle-right">
+          <h1>Welcome, Back!</h1>
+          <p>Enter your personal details to use site features</p>
+          <button class="toggle-sign-up">Sign up</button>
+        </div>
+      </div>
+      <div class="container sign-up">
+        <div class="toggle-left">
+          <h1>Hello, Friend!</h1>
+          <p style="width: 90%; text-align: center">
+            Register with your personal details to use site features
+          </p>
+          <button class="toggle-log-in">Log in</button>
+        </div>
+        <div class="sign-in-div">
+          <h1>Create Account</h1>
+          <form>
+            <input type="text" id="sign-up-name" required placeholder="Name" />
+            <input
+              type="email"
+              id="sign-up-email"
+              required
+              placeholder="Email"
+            />
+            <span
+              class="sign-up-email-alert"
+              style="color: red; font-size: small; display: none"
+              >This email is already in use
+            </span>
+            <input
+              type="password"
+              id="sign-up-password"
+              required
+              placeholder="Password"
+            />
+            <span
+              class="sign-up-alert"
+              style="color: red; font-size: small; display: none"
+              >Password length should be minimum 8!</span
+            >
+
+            <input type="submit" id="submit-sign-up" />
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- sweet alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

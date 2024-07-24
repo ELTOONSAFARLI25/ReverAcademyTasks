@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+nav {
+  background-color: blueviolet;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.container-navbar {
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+}
+.nav-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 30%;
+  align-items: center;
+  gap: 20px;
+}
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+}
+.nav-list li a:hover {
+  text-decoration: underline;
+}
+.logo-img {
+  width: 90px;
+}
+.header-navbar a {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 600;
+  gap: 10px;
+  color: #25d865;
+}
+.log-in-btn,
+.sign-up-btn {
+  width: 80px;
+  padding: 10px;
+  border: none;
+  border-radius: 9px;
+  font-size: 15px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+.sign-up-btn {
+  background-color: black;
+  color: white;
+}
+
+.log-in-btn:active,
+.sign-up-btn:active {
+  opacity: 0.7;
+}
+.container-card {
+  margin: auto;
+  margin-top: 50px;
+  width: 40%;
+  height: 600px;
+  border-radius: 12px;
+  overflow: hidden;
+
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.img {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+.img img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+.card-body {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.buttons {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+  align-items: center;
+}
+.home-btn {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #8a2be2;
+  border-radius: 9px;
+  color: white;
+  transition: 0.2s;
+}
+.home-btn:active {
+  opacity: 0.7;
+}
