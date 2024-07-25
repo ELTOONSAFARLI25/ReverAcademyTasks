@@ -1,24 +1,26 @@
 let id = new URLSearchParams(location.search).get("id");
 let api_url_singers = "http://localhost:3000/meals/";
 let container_card = document.querySelector(".container-card");
+console.log(id);
 async function getData() {
   let data = await (await fetch(api_url_singers + id)).json();
   container_card.innerHTML = `
   <div class="card">
           <div class="img">
             <img
-              src="${data.image}"
+              src="${data.imageLink}"
               alt=""
             />
           </div>
           <div class="card-body">
             <h1>${data.name}</h1>
-            <p>${data.name} is in ${data.nationality}</p>
-            <p>Age:${data.age}</p>
-            <p>Genre: ${data.genre}</p>
+
+            <h3>Ingredients:</h3>
+            <i> ${data.ingredients.join(", ").toLowerCase()}</i>
+            <p>Price: ${data.price}</p>
             <div class="buttons">
               <a
-                href="./singers.html
+                href="./meals.html
                 "
                 ><button class="home-btn">Home</button></a
               >

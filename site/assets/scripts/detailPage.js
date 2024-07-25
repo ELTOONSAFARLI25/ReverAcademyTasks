@@ -1,7 +1,7 @@
 let loged_user = JSON.parse(localStorage.getItem("logedUser"));
 let nav_list = document.querySelector(".nav-list");
 let footer_list = document.querySelector(".footer-list");
-
+let api_url_products = "https://fakestoreapi.com/products/";
 if (loged_user) {
   nav_list.innerHTML = `
  <li><a href="./home.html" class="title-home">mrendyol</a></li>
@@ -46,38 +46,8 @@ if (loged_user) {
  `;
 }
 
-let cards = document.querySelector(".cards");
-let api_url_products = "https://fakestoreapi.com/products/";
+let id = new URLSearchParams(location.search).get("id");
+console.log(id);
 async function getData() {
-  let data = await (await fetch(api_url_products)).json();
-  for (let elem of data) {
-    let new_card = `
-    <div class="card" id="${elem.id}">
-          <div class="card-img">
-            <a href="./detailPage.html?id=${elem.id}">
-              <img
-                src="${elem.image}"
-                alt=""
-              />
-            </a>
-          </div>
-          <div class="card-body">
-            <div class="details">
-              <a href="./detailPage.html?id=${
-                elem.id
-              }"> <h4 class="card-titel">${elem.title.slice(0, 60)}...</h4></a>
-
-              <p class="card-rating">Rate: ${elem.rating.rate}</p>
-              <p class="card-price">$${elem.price}</p>
-            </div>
-            <div class="card-icons">
-              <i class="fa-regular fa-heart wishlistBtn"></i>
-              <i class="fa-solid fa-cart-shopping basketBtn"></i>
-            </div>
-          </div>
-        </div>
-    `;
-    cards.innerHTML += new_card;
-  }
+  let data = await (await fetch(api_url_products + id)).json();
 }
-getData();

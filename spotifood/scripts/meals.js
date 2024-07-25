@@ -16,13 +16,13 @@ async function getData() {
           </div>
           <div class="card-body">
             <div class="card-details">
-              <a href="./detail_meals.html?=${elem.id}"><h3>${elem.name}</h3></a>
+              <a href="./detail_meals.html?id=${elem.id}"><h3>${elem.name}</h3></a>
 
               <p>Price: ${elem.price}</p>
             </div>
             <div class="card-buttons">
               <button class="add-to-basket">Add to Basket</button>
-              <a href="./detail.html"><button class="detail">Detail</button></a>
+              <a href="./detail_meals.html?id=${elem.id}"><button class="detail">Detail</button></a>
 
               <i class="fa-regular fa-heart add-to-fav" style="color: red"></i>
 
