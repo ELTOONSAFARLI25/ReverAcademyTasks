@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/basket.css" />
+    <script src="./scripts/basket.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="container-navbar">
+        <div class="header-navbar">
+          <a href="./singers.html">
+            <img
+              class="logo-img"
+              src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_Black.png"
+              alt=""
+            />
+            Spotify
+          </a>
+        </div>
+        <ul class="nav-list">
+          <li><a href="./singers.html">Singers</a></li>
+          <li><a href="./meals.html">Meals</a></li>
+          <li><a href="./basket.html">Basket</a></li>
+          <li>
+            <a href="./wishlist.html" style="position: relative">Wishlist </a>
+          </li>
+          <li>
+            <a href="./login.html"
+              ><button class="log-in-btn">Log in</button></a
+            >
+          </li>
+          <li>
+            <a href="./signup.html"
+              ><button class="sign-up-btn">Sign up</button></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Image</th>
+              <th>Count</th>
+              <th>Price</th>
+              <th>Total price</th>
+              <th style="color: red; cursor: pointer" class="remove-all-btn">
+                Remove All
+              </th>
+            </tr>
+          </thead>
+          <tbody class="tbody">
+            <!-- <tr>
+              <td>1</td>
+              <td>Name</td>
+              <td>
+                <img
+                  src="https://i0.wp.com/chefrafaelgonzalez.com/wp-content/uploads/2022/07/bolognese-tasty.png?fit=1080%2C1080&ssl=1"
+                  alt=""
+                />
+              </td>
+              <td>
+                <span class="minus">-</span>
+                <span class="count">1</span>
+                <span class="plus">+</span>
+              </td>
+              <td>price$</td>
+              <td>Total price</td>
+              <td class="remove-btn" style="color: red; cursor: pointer">
+                remove
+              </td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+      <div class="total-container">
+        <h1>Order Summary</h1>
+        <hr />
+        <h2 class="total-price">Total price :</h2>
+        <h3 class="total-count">Total count:</h3>
+        <button class="confirm-basket-btn">Confirm basket</button>
+      </div>
+    </main>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</html>

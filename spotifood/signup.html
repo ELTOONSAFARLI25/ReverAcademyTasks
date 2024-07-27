@@ -10,8 +10,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./styles/singers.css" />
-    <script src="./scripts/home.js" defer></script>
+    <link rel="stylesheet" href="./styles/signup.css" />
+    <script src="./scripts/signup.js" defer></script>
     <title>Document</title>
   </head>
   <body>
@@ -32,9 +32,7 @@
           <li><a href="./meals.html">Meals</a></li>
           <li><a href="./basket.html">Basket</a></li>
           <li>
-            <a href="./wishlist.html" style="position: relative"
-              >Wishlist <span class="fav-counter">0</span></a
-            >
+            <a href="./wishlist.html" style="position: relative">Wishlist </a>
           </li>
           <li>
             <a href="./login.html"
@@ -49,37 +47,23 @@
         </ul>
       </div>
     </nav>
-    <header>
-      <form class="search-form">
-        <input type="text" id="search-input" placeholder="search singers" />
-        <button id="submit-search">Sort by Name</button>
-      </form>
-    </header>
+
     <main>
-      <div class="container-cards">
-        <!-- <div class="card">
-          <div class="card-img">
-            <img
-              src="https://www.zeitjung.de/wp-content/uploads/2017/07/ed-sheeran-l%C3%B6scht-twitter-account.jpg"
-              alt=""
-            />
-          </div>
-          <div class="card-body">
-            <div class="card-details">
-              <a href="./detail.html"><h3>Name</h3></a>
-
-              <p>name is nationality</p>
-            </div>
-            <div class="card-buttons">
-              <a href="./detail.html"><button class="detail">Detail</button></a>
-
-              <i class="fa-regular fa-heart add-to-fav" style="color: red"></i>
-
-              <i class="fa-solid fa-trash delete-btn"></i>
-            </div>
-          </div>
-        </div> -->
+      <div class="container">
+        <h1>Hello, Friend!</h1>
+        <form class="sign-up-form">
+          <input type="text" id="sign-up-name" placeholder="Name" required />
+          <input type="email" id="sign-up-email" placeholder="Email" required />
+          <input
+            type="password"
+            id="sign-up-password"
+            placeholder="Password"
+            required
+          />
+          <button id="sign-up-submit">Sign up</button>
+        </form>
       </div>
     </main>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </html>

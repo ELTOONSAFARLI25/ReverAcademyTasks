@@ -1,3 +1,48 @@
+let loged_user = JSON.parse(localStorage.getItem("loged_user"));
+let nav_list = document.querySelector(".nav-list");
+if (loged_user.length > 0) {
+  nav_list.innerHTML = `
+
+  <li><a href="./singers.html">Singers</a></li>
+          <li><a href="./meals.html">Meals</a></li>
+          <li><a href="./basket.html">Basket</a></li>
+          <li>
+            <a href="./wishlist.html" style="position: relative"
+              >Wishlist <span class="fav-counter">0</span></a
+            >
+          </li>
+          <li><button class="sign-out">Sign out</button></li>
+          
+  `;
+  let sign_out = document.querySelector(".sign-out");
+  sign_out.addEventListener("click", () => {
+    loged_user = [];
+    localStorage.setItem("loged_user", JSON.stringify(loged_user));
+    nav_list.innerHTML = `
+
+    <li><a href="./singers.html">Singers</a></li>
+          <li><a href="./meals.html">Meals</a></li>
+          <li><a href="./basket.html">Basket</a></li>
+          <li>
+            <a href="./wishlist.html" style="position: relative">Wishlist </a>
+          </li>
+          <li>
+            <a href="./login.html"
+              ><button class="log-in-btn">Log in</button></a
+            >
+          </li>
+          <li><button class="sign-up-btn">Sign up</button></li>
+            
+    `;
+    Swal.fire({
+      position: "top-end",
+      icon: "success",
+      title: "You signed out!",
+      showConfirmButton: false,
+      timer: 1500,
+    });
+  });
+}
 let id = new URLSearchParams(location.search).get("id");
 let api_url_singers = "http://localhost:3000/meals/";
 let container_card = document.querySelector(".container-card");

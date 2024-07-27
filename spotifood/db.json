@@ -1,7 +1,7 @@
 {
   "singers": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Ed Sheeran",
       "image": "https://www.zeitjung.de/wp-content/uploads/2017/07/ed-sheeran-l%C3%B6scht-twitter-account.jpg",
       "nationality": "United Kingdom",
@@ -9,7 +9,7 @@
       "genre": "Pop"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Beyoncé",
       "image": "https://people.com/thmb/FuBsElDPK6KjI75OrhoCXdl-0-Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(661x0:663x2)/beyonce-3-2000-1-79668175f41a4ed48cab5bb1a8fac128.jpg",
       "nationality": "United States",
@@ -17,7 +17,7 @@
       "genre": "R&B"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Adele",
       "image": "https://media-cldnry.s-nbcnews.com/image/upload/rockcms/2022-02/adele-main-jc-220215-7430fb.jpg",
       "nationality": "United Kingdom",
@@ -25,7 +25,7 @@
       "genre": "Pop"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Selena Gomez",
       "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iKp_Tvsd7Feo/v1/-1x-1.jpg",
       "nationality": "United States",
@@ -33,7 +33,7 @@
       "genre": "Pop"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Taylor Swift",
       "image": "https://daily.jstor.org/wp-content/uploads/2020/09/the_linguistic_evolution_of_taylor_swift_1050x700.jpg",
       "nationality": "United States",
@@ -41,7 +41,7 @@
       "genre": "Pop"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Katy Perry",
       "image": "https://www.themoviedb.org/t/p/original/8UusJIagRVST2FzfcJQYTjyIQUi.jpg",
       "nationality": "United States",
@@ -49,7 +49,6 @@
       "genre": "Pop"
     }
   ],
-
   "meals": [
     {
       "id": "1",
@@ -141,7 +140,7 @@
   ],
   "user": [
     {
-      "id": 1,
+      "id": "1",
       "username": "johndoe",
       "email": "johndoe@example.com",
       "password": "A1234",
@@ -149,7 +148,7 @@
       "order": []
     },
     {
-      "id": 2,
+      "id": "2",
       "username": "janedoe",
       "email": "janedoe@example.com",
       "password": "5678",
@@ -157,7 +156,7 @@
       "order": []
     },
     {
-      "id": 3,
+      "id": "3",
       "username": "user123",
       "email": "user123@example.com",
       "password": "1579",
@@ -165,7 +164,7 @@
       "order": []
     },
     {
-      "id": 4,
+      "id": "4",
       "username": "webmaster",
       "email": "webmaster@example.com",
       "password": "84569",
@@ -173,12 +172,108 @@
       "order": []
     },
     {
-      "id": 5,
+      "id": "5",
       "username": "alice_smith",
       "email": "alice_smith@example.com",
       "password": "458769",
       "balance": 50,
       "order": []
+    },
+    {
+      "id": "9607",
+      "username": "Bernard Howard",
+      "email": "ziqavy@mailinator.com",
+      "password": "Pa$$w0rd!"
+    },
+    {
+      "id": "43a3",
+      "username": "Stacey Bradshaw",
+      "email": "byhabyta@mailinator.com",
+      "password": "Pa$$w0rd!"
+    },
+    {
+      "id": "dc94",
+      "username": "Elton",
+      "email": "eltonseferli2@gmail.com",
+      "password": "sdfuig98y9d"
+    },
+    {
+      "id": "97d8",
+      "username": "Claudia Shelton",
+      "email": "qanuk@mailinator.com",
+      "password": "Pa$$w0rd!"
+    },
+    {
+      "id": "a4b1",
+      "username": "Amber Estrada",
+      "email": "dima@mailinator.com",
+      "password": "Pa$$w0rd!"
+    },
+    {
+      "id": "668a",
+      "username": "Kieran Sellers",
+      "email": "tekoq@mailinator.com",
+      "password": "Pa$$w0rd!"
+    },
+    {
+      "id": "d2f3",
+      "username": "Fletcher Boyle",
+      "email": "jacobapasi@mailinator.com",
+      "password": "Pa$$w0rd!"
+    },
+    {
+      "id": "bd24",
+      "username": "John Phillips",
+      "email": "dynacuwa@mailinator.com",
+      "password": "Pa$$w0rd!"
+    },
+    {
+      "id": "25c3",
+      "username": "Sonya Dillon",
+      "email": "xujepigepo@mailinator.com",
+      "password": "Pa$$w0rd!"
+    },
+    {
+      "id": "5e14",
+      "username": "elton",
+      "email": "eltonsefer2@gmail.com",
+      "password": "fwgfvwsbfvsfbo"
+    },
+    {
+      "id": "e1ee",
+      "username": "Elton",
+      "email": "eltonsfrlee2@gmail.com",
+      "password": "124834832540"
+    },
+    {
+      "id": "8949",
+      "username": "elton",
+      "email": "seferli2@gmail.com",
+      "password": "gu2304832"
+    },
+    {
+      "id": "8832",
+      "username": "Giacomo Sharp",
+      "email": "ceqazu@mailinator.com",
+      "password": "Pa$$w0rd!"
+    },
+    {
+      "id": "de00",
+      "username": "Ursula Nieves",
+      "email": "vunydarin@mailinator.com",
+      "password": "Pa$$w0rd!"
+    },
+    {
+      "id": "2ffb",
+      "username": "Myra Lynch",
+      "email": "nukedysaj@mailinator.com",
+      "password": "Pa$$w0rd!"
+    },
+    {
+      "id": "3de3",
+      "username": "Samson Dunn",
+      "email": "myvegifego@mailinator.com",
+      "password": "Pa$$w0rd!"
     }
   ]
 }
