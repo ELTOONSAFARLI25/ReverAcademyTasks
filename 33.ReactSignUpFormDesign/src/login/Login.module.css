@@ -3,9 +3,9 @@
   box-sizing: border-box;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-body {
+/* body {
   background-color: #ee2433;
-}
+} */
 .container {
   width: 70%;
   height: 600px;
@@ -48,6 +48,7 @@ body {
   display: grid;
   grid-template-areas: "1fr 1fr";
   width: 100%;
+  gap: 10px;
 }
 .inputDIV {
   display: flex;
@@ -55,9 +56,9 @@ body {
   margin-top: 20px;
   margin-right: 100px;
 }
-.inputDIV input {
+.input {
   padding: 5px;
-  width: 200px;
+  width: 300px;
   outline: none;
 }
 .links {
