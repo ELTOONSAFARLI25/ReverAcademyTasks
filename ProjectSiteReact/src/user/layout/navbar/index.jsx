@@ -36,11 +36,14 @@ function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link className={navCss.link}>Men</Link>
+                <Link to="/products" className={navCss.link}>
+                  Products
+                </Link>
               </li>
               <li>
-                {" "}
-                <Link className={navCss.link}>Women</Link>
+                <Link to="/wishlist" className={navCss.link}>
+                  Wishlist
+                </Link>
               </li>
               <li>
                 <Link to="/contact" className={navCss.link}>

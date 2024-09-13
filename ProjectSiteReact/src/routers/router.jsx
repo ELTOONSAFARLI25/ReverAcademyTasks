@@ -9,6 +9,7 @@ import Login from "../user/pages/login";
 import Register from "../user/pages/login/register";
 import Wishlist from "../user/pages/wishlist";
 import UserRoot from "../user/userRoot";
+import ProductsUser from "../user/pages/products";
 export let routes = [
   {
     path: "/",
@@ -19,6 +20,7 @@ export let routes = [
       { path: "/contact", element: <Contact /> },
       { path: "/wishlist", element: <Wishlist /> },
       { path: "/basket", element: <Basket /> },
+      { path: "/products", element: <ProductsUser /> },
     ],
   },
   {

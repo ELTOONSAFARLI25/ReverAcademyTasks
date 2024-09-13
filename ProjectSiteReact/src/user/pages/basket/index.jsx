@@ -3,6 +3,7 @@ import basketCss from "../basket/Basket.module.css";
 function Basket() {
   return (
     <>
+      <title>Basket | Capital Shop</title>
       <div className={basketCss.container_basket}>
         <table>
           <thead className={basketCss.basket_head}>
